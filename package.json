@@ -1,5 +1,5 @@
 {
-    "name": "@scmbb/winser",
+    "name": "winser",
     "version": "2.0.1",
     "description": "Run a node.js application as a window service using nssm.",
     "keywords": [

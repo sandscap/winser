@@ -4,7 +4,9 @@
 
 ## Installation
 
-    $ npm install winser
+```bash
+npm install @sandscap-sc/winser
+```
 
 ## Command line arguments
 
@@ -44,15 +46,15 @@ Then, in order to install a node application in lets say a server I will do this
 
 The arguments in the **postinstall** script means:
 
--  i install
--  s silent, don't display any information
--  c ask for confirmation. This is very helpfull because during development you don't want to install/uninstall the package as a windows service but you will often run "npm install" in the folder, then you can cancel with an 'n'.
+- `-i` install
+- `-s` silent, don't display any information
+- `-c` ask for confirmation. This is very helpfull because during development you don't want to install/uninstall the package as a windows service but you will often run "npm install" in the folder, then you can cancel with an 'n'.
 
 The arguments in the **preuninstall** script means:
 
--  x stop the service before uninstalling
--  r remove the service
--  s silent, don't display any information
+- `-x` stop the service before uninstalling
+- `-r` remove the service
+- `-s` silent, don't display any information
 
 
 ## Method 2
@@ -77,9 +79,10 @@ Then you can install your service as:
 When you install your node.js program as a windows service, your program is registered using nssm.exe (which is inside the module folder). Once you start the service nssm.exe is run and nssm.exe will execute start command.
 
 Start command may be:
- - npm "start" action from package.json.
- - "node <main>", where <main> is a main section in package.json.
- - command provided by "--startcmd <command>" option.
+
+- npm "start" action from package.json.
+- `node <main>`, where `<main>` is a main section in package.json.
+- command provided by `--startcmd <command>` option.
 
 Remember that the default npm action for "start" is "node server.js".
 
@@ -89,11 +92,11 @@ The name of the service will be the same from your package.json "name" setting.
 
 This project is heavily inspired in
 
- - [Node.js on windows by Tatham Oddie](http://blog.tatham.oddie.com.au/2011/03/16/node-js-on-windows/)
+- [Node.js on windows by Tatham Oddie](http://blog.tatham.oddie.com.au/2011/03/16/node-js-on-windows/)
 
 And it uses:
 
- - [nssm](http://nssm.cc)
+- [nssm](http://nssm.cc)
 
 ## License
 

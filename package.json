@@ -1,6 +1,6 @@
 {
-    "name": "@sandscap-sc/sc-winser",
-    "version": "1.0.3",
+    "name": "@scmbb/winser",
+    "version": "2.0.1",
     "description": "Run a node.js application as a window service using nssm.",
     "keywords": [
         "windows",
@@ -8,7 +8,7 @@
         "service",
         "daemon"
     ],
-    "homepage": "https://github.com/sandscap-sc/winser",
+    "homepage": "https://bitbucket.org/scmbb/winser",
     "author": {
         "name": "Jose Fernando Romaniello",
         "email": "jfromaniello@gmail.com",
@@ -16,17 +16,21 @@
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/sandscap-sc/winser.git"
+        "url": "git://bitbucket.org/scmbb/winser.git"
     },
     "private": false,
     "dependencies": {
         "async": "2.6.1",
+        "debug": "^4.1.0",
         "stdio": "0.2.7"
     },
     "bin": {
         "winser": "./bin/winser"
     },
     "engines": {
-        "node": ">=0.6.13"
+        "node": "*"
+    },
+    "devDependencies": {
+        "@types/node": "^10.12.15"
     }
 }
